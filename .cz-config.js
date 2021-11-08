@@ -15,7 +15,7 @@ module.exports = {
     { value: 'revert', name: 'revert：回退' },
     { value: 'build', name: 'build：打包' }
   ],
-  message: {
+  messages: {
     type: '请选择提交的类型',
     customScope: '请输入次该范围(可选)',
     subject: '请简要描述提交(必填)',
@@ -23,5 +23,6 @@ module.exports = {
     footer: '请输入要关闭的issue(可选)',
     confirmCommit: '确定要使用以上信息提交吗？（y/n）'
   },
+  skipQuestions: ['body', 'footer'],
   subjectLimit: 100
 }
