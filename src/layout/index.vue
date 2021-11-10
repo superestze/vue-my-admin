@@ -23,12 +23,6 @@ import Sidebar from '@/layout/components/Sidebar'
 import AppMain from '@/layout/components/AppMain'
 import variables from '@/styles/variables.scss'
 import {} from 'vue'
-
-console.log(
-  '%c 🍹 variables: ',
-  'font-size:20px;background-color: #7F2B82;color:#fff;',
-  variables
-)
 </script>
 <style lang="scss" scoped>
 @import '~@/styles/mixin.scss';
@@ -38,7 +32,7 @@ console.log(
   @include clearfix;
   position: relative;
   height: 100%;
-  width: 100px;
+  width: 100%;
 }
 
 .fixed-header {

@@ -21,10 +21,5 @@ export function setTimeStamp() {
 export function isCheckTimeout() {
   const currentTime = Date.now()
   const timeStamp = getTimeStamp()
-  console.log(
-    '%c 🍖 currentTime - timeStamp : ',
-    'font-size:20px;background-color: #F5CE50;color:#fff;',
-    currentTime - timeStamp
-  )
   return currentTime - timeStamp > TOKEN_TIMEOUT_VALUE
 }

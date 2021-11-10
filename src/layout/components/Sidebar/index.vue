@@ -1,6 +1,13 @@
 <template>
   <div class="">
-    <h1>占位</h1>
+    <div class="login-container">
+      <el-avatar
+        size="44"
+        shape="square"
+        src="https://m.imooc.com/static/wap/static/common/img/logo-small@2x.png"
+      ></el-avatar>
+      <!-- <h1 class="logo-title" v-if="$store.getters.sidebarOpened"></h1> -->
+    </div>
     <el-scrollbar>
       <sidebar-menu></sidebar-menu>
     </el-scrollbar>
