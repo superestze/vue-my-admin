@@ -1,7 +1,10 @@
 <template>
   <div class="app-wrapper">
     <!-- 左侧 -->
-    <sidebar class="sidebar-container"></sidebar>
+    <sidebar
+      class="sidebar-container"
+      :style="{ backgroundColor: variables.menuBg }"
+    ></sidebar>
     <!-- 顶部 -->
     <div class="main-container">
       <div class="fixed-header">
