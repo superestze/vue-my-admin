@@ -41,6 +41,13 @@ service.interceptors.response.use(
   },
   // 请求失败
   (error) => {
+    if (
+      error.response &&
+      error.response.data &&
+      error.response.data.code === 401
+    ) {
+      store.dispatch('user/login')
+    }
     ElMessage.error(error.message)
     return Promise.reject(error)
   }
