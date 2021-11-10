@@ -60,7 +60,7 @@ const logout = () => {
   //   }
   // }
   .hamburger-container {
-    line-height: 46px;
+    line-height: 36px;
     height: 100%;
     float: left;
     cursor: pointer;

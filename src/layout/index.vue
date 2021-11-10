@@ -1,7 +1,7 @@
 <template>
   <div
     class="app-wrapper"
-    :class="[$store.getters.sidebarOpened ? 'openSidebar' : 'hiddenSidebar']"
+    :class="[$store.getters.sidebarOpened ? 'openSidebar' : 'hideSidebar']"
   >
     <!-- 左侧 -->
     <sidebar
@@ -15,7 +15,7 @@
         <navbar />
       </div>
       <!-- 内容区 -->
-      <app-main></app-main>
+      <app-main />
     </div>
     <!-- 内容 -->
   </div>
@@ -42,12 +42,12 @@ import {} from 'vue'
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 0;
+  z-index: 5;
   width: calc(100% - #{$sideBarWidth});
-  transition: width 0.28s;
+  transition: width #{$sideBardDuration};
 }
 
-.hiddenSidebar .fixed-header {
+.hideSidebar .fixed-header {
   width: calc(100% - #{$hideSideBarWidth});
 }
 </style>
