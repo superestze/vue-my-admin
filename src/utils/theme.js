@@ -29,11 +29,6 @@ export const generateColors = (primary) => {
     primary
   }
 
-  // Object.keys(formula).forEach((key) => {
-  //   const value = formula[key].replace(/primary/g, primary)
-  //   colors[key] = `#${rgbHex(color.covert(value))}`
-  // })
-
   Object.keys(formula).forEach((key) => {
     const value = formula[key].replace(/primary/g, primary)
     colors[key] = '#' + rgbHex(color.convert(value))

@@ -4,6 +4,7 @@
     <hambergur class="hamburger-container" />
     <brandcrumb class="breadcrumb-container" />
     <div class="right-menu">
+      <screenfull class="right-menu-item hover-effect"></screenfull>
       <theme-picker class="right-menu-item hover-effect"></theme-picker>
       <lang-select class="right-menu-item hover-effect"></lang-select>
 
@@ -37,6 +38,7 @@
 <script setup>
 import {} from 'vue'
 import { useStore } from 'vuex'
+import Screenfull from '@/components/Screenfull'
 import ThemePicker from '@/components/ThemeSelect'
 import Hambergur from '@/components/Hamburger'
 import Brandcrumb from '@/components/Brandcrumb'
