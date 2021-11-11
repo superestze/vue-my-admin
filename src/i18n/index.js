@@ -1,18 +1,20 @@
 import { createI18n } from 'vue-i18n'
+import zhLocal from './lang/zh'
+import enLocal from './lang/en'
 const messages = {
   en: {
     msg: {
-      test: 'hello world'
+      ...enLocal
     }
   },
   zh: {
     msg: {
-      test: '你好世界'
+      ...zhLocal
     }
   }
 }
 
-const locale = 'en'
+const locale = 'zh'
 
 const i18n = createI18n({
   // 使用 Composition API 模式，则需要将其设置为false
