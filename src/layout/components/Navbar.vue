@@ -4,6 +4,8 @@
     <hambergur class="hamburger-container" />
     <brandcrumb class="breadcrumb-container" />
     <div class="right-menu">
+      <lang-select class="right-menu-item hover-effect"></lang-select>
+
       <!-- 头像 -->
       <el-dropdown class="avatar-container" trigger="click">
         <div class="avatar-wrapper">
@@ -36,6 +38,7 @@ import {} from 'vue'
 import { useStore } from 'vuex'
 import Hambergur from '@/components/hamburger'
 import Brandcrumb from '@/components/Brandcrumb'
+import LangSelect from '@/components/LangSelect/index'
 
 const store = useStore()
 const logout = () => {
@@ -70,6 +73,17 @@ const logout = () => {
     align-items: center;
     float: right;
     padding-right: 16px;
+
+    ::v-deep .right-menu-item {
+      display: inline-block;
+      padding: 0 18px 0 0;
+      font-size: 24px;
+      color: #5a5e66;
+      vertical-align: text-bottom;
+      &.hover-effect {
+        cursor: pointer;
+      }
+    }
 
     ::v-deep .avatar-container {
       cursor: pointer;
