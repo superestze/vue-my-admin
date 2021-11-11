@@ -46,7 +46,8 @@ export default {
   },
   universal: {
     confirm: 'confirm',
-    cancel: 'cancel'
+    cancel: 'cancel',
+    title: 'remind'
   },
   navBar: {
     themeChange: 'Theme Modification',
