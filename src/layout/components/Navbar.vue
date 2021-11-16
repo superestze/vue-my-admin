@@ -4,6 +4,7 @@
     <hambergur class="hamburger-container" />
     <brandcrumb class="breadcrumb-container" />
     <div class="right-menu">
+      <header-search class="right-menu-item hover-effect"></header-search>
       <screenfull class="right-menu-item hover-effect"></screenfull>
       <theme-picker class="right-menu-item hover-effect"></theme-picker>
       <lang-select class="right-menu-item hover-effect"></lang-select>
@@ -39,6 +40,7 @@
 import {} from 'vue'
 import { useStore } from 'vuex'
 import Screenfull from '@/components/Screenfull'
+import HeaderSearch from '@/components/HeaderSearch'
 import ThemePicker from '@/components/ThemeSelect'
 import Hambergur from '@/components/Hamburger'
 import Brandcrumb from '@/components/Brandcrumb'
